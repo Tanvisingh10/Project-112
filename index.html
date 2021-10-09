@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Hand Gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+     </head>
+  <body style="background-color: skyblue;">
+    <div style="background-color:whitesmoke;">
+<h1 style="font-size: 85px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center; color: black;">Hand Gestures</h1>
+<h3 style="color: red; font-size: 25px; text-align: center;">**This model is trained to identify different hand Gestures**</h3>
+</div>
+<br>
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <label style="margin-left: 125px;">Webcam View-</label>
+    <div id="camera"></div>
+    <br><br>
+    <button class="btn btn-primary" onclick="take_snapshot()">Capture Image</button></div><span></span>
+    <br>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Hand Gesture-</label>
+        <p class="gesture_name" id="result_gesture_name"></p>
+        <p class="gesture" id="update_gesture"></p>
+    </div><span></span>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+<div id="result"></div>
+<br><br>
+<button class="btn btn-success" onclick="check()">Predict Emotion</button>
+  <br> 
+ </div>
+ <br><br>
+  </body>
+  <script src="main.js"></script>
+  </html>

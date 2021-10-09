@@ -1,0 +1,28 @@
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px solid black;
+  width: 350px;
+  height: 300px; 
+}
+#result_gesture_name{
+  color: black;
+}
+.gesture_name
+{
+  font-size: 40px;
+}
+.gesture
+{
+  font-size:48px;
+}
+label{
+  font-size: 20px;
+  color: darkblue;
+  background-color: lemonchiffon;
+  border-radius: 10px;
+  padding: 5px;
+}
